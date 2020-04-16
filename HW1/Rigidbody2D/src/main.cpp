@@ -4,7 +4,7 @@ Computer animation assignment 1 : physical simulation
 
 Please do not upload this homework to github.
 
-Please fill your student ID : " "
+Please fill your student ID : ""
 
 First step : Look for TODO comments to find the methods that you need to implement.
 
@@ -34,13 +34,11 @@ namespace
     const float accumulate_upper_bound = 
         std::max(deltaTime, 0.1f);
 
-    // TODO: Swap your integrator method here.
     auto integrator = std::make_shared<RungeKuttaFourthIntegrator>();
-    //                std::make_shared<ExplicitEulerIntegrator>();
+                      //std::make_shared<ExplicitEulerIntegrator>();
 
-    Scene scene(deltaTime, positional_correction_iterations,
-        integrator
-    );
+    auto scene = std::make_shared<Scene>(
+        deltaTime, positional_correction_iterations, integrator);
 
     int screen_width = 600;
 	int screen_height = 600;
@@ -64,8 +62,7 @@ private:
 		0, 0, -1,
 		0, 1, 0);
 
-
-        scene.Render();
+        scene->Render();
 
         glutSwapBuffers();
         glutPostRedisplay();
@@ -77,14 +74,10 @@ public:
         accumulator += (float)Clock::Elapsed();
         Clock::Reset();
 
-        // Notice that in order to prevent a burst of calling to step(), 
-        // we clamp the accumulated time steps. However, if the delta time
-        // is larger than the upper bound of clamp, step() will never be
-        // called.
         accumulator = std::clamp(accumulator, 0.0f, accumulate_upper_bound);
         while(accumulator >= deltaTime)
         {
-            scene.Step();
+            scene->Step();
 
             accumulator -= deltaTime;
         }
@@ -105,11 +98,9 @@ public:
         glViewport( 0, 0, width, height );
         glMatrixMode(GL_PROJECTION);
         glLoadIdentity();
-        // when init, window size is 600x600 mapping to [-30 ~ 30]
+
         float2 ortho_size((float)width / 20.0f, (float)height / 20.0f);
         
-        // gluOrtho2D sets up a two-dimensional orthographic viewing region.
-        // This is equivalent to calling glOrtho with near = -1 and far = 1 .
         gluOrtho2D(-ortho_size.x, ortho_size.x, -ortho_size.y, ortho_size.y);
     }
 
@@ -123,7 +114,7 @@ public:
             std::shared_ptr<Circle> shape = std::make_shared<Circle>(
                 3.0f
             );
-            auto body = scene.AddRigidBody(shape, position);
+            auto body = scene->AddRigidBody(shape, position);
         }
         if(button == GLUT_RIGHT_BUTTON && state == GLUT_DOWN)
         {
@@ -137,7 +128,7 @@ public:
                 float2( drand48() * 5 + 3, drand48() * 5 + 3 )
 #endif
             );
-            auto body = scene.AddRigidBody(shape, position);
+            auto body = scene->AddRigidBody(shape, position);
         }
     }
 };
@@ -155,11 +146,11 @@ int main(int argc, char* argv[])
     glutMouseFunc(GLUTCallback::Mouse);
     glutReshapeFunc(GLUTCallback::Reshape);
 
-    auto rk4 = std::dynamic_pointer_cast<RungeKuttaFourthIntegrator>(integrator);
-    if(rk4)
-    {
-        rk4->scene = std::make_shared<Scene>(scene);
-    }
+	auto rk4 = std::dynamic_pointer_cast<RungeKuttaFourthIntegrator>(integrator);
+	if (rk4)
+	{
+		rk4->scene = scene;
+	}
 
     // fill in the scene
     // floor
@@ -168,26 +159,24 @@ int main(int argc, char* argv[])
             float2 (35, 1)
         );
 
-        auto body = scene.AddRigidBody(shape, float2(0, -10));
+        auto body = scene->AddRigidBody(shape, float2(0, -10));
         // setting an infinite mass
         body->SetMass(0.0f);
     }
-
-    // dynamic objects
     {
         std::shared_ptr<Circle> shape = std::make_shared<Circle>(2.0f);
-        auto body = scene.AddRigidBody(shape, float2(-12.5f, 5.0f));
+        auto body = scene->AddRigidBody(shape, float2(-12.5f, 5.0f));
         body->SetVelocity(float2(15, 0));
     }
     {
         std::shared_ptr<Circle> shape = std::make_shared<Circle>(2.0f);
-        auto body = scene.AddRigidBody(shape, float2(-5, 16));
+        auto body = scene->AddRigidBody(shape, float2(-5, 16));
     }
     {
         std::shared_ptr<AABB> shape = std::make_shared<AABB>(
             float2 (5, 5)
         );
-        auto body = scene.AddRigidBody(shape, float2(-5, 20));
+        auto body = scene->AddRigidBody(shape, float2(-5, 20));
         body->SetVelocity(float2(8, 5));
     }
     {
@@ -204,7 +193,7 @@ int main(int argc, char* argv[])
         for(size_t i = 0; i < box_size; i++)
         {
             auto shape = std::make_shared<AABB>(float2 (1, 1));
-            boxes.push_back(scene.AddRigidBody(shape, 
+            boxes.push_back(scene->AddRigidBody(shape, 
                 float2(length * std::cos(theta), -18.0f)
             ));
 			boxes[i]->SetMass(1.0f);
@@ -219,8 +208,7 @@ int main(int argc, char* argv[])
         {
             std::shared_ptr<SpringJoint> disJoint = 
                 std::make_shared<SpringJoint>(boxes[i - 1], boxes[i], rest_length, 100.0f);
- 
-            scene.AddJoint(disJoint);
+            scene->AddJoint(disJoint);
         }
     }
     {
@@ -234,7 +222,7 @@ int main(int argc, char* argv[])
         for(size_t i = 0; i < box_size; i++)
         {
             auto shape = std::make_shared<AABB>(float2 (1, 1));
-            boxes.push_back(scene.AddRigidBody(shape, 
+            boxes.push_back(scene->AddRigidBody(shape, 
                 float2( -20.0f + -3.0f * i, 30 - rest_length * i)
             ));
 			boxes[i]->SetMass(1.0f);
@@ -246,8 +234,8 @@ int main(int argc, char* argv[])
         for(size_t i = 1; i < box_size; i++)
         {
             std::shared_ptr<DistanceJoint> disJoint = 
-                std::make_shared<DistanceJoint>(boxes[i - 1], boxes[i], rest_length * 3.0f);
-            scene.AddJoint(disJoint);
+                std::make_shared<DistanceJoint>(boxes[i - 1], boxes[i], rest_length * 3.0f, deltaTime);
+            scene->AddJoint(disJoint);
         }
     }
     

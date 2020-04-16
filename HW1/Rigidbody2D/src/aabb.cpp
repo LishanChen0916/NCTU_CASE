@@ -12,18 +12,26 @@ Manifold AABB::accept(std::shared_ptr<const ShapeVisitor<Manifold>> visitor) con
 }
 
 Manifold AABB::visitAABB(std::shared_ptr<const AABB> _shape) const
-{
-    // TODO
+{	
+	float2 center_of_mass_distance = _shape->m_body->GetPosition() - m_body->GetPosition();
+	float2 penetration_depth = (m_extent + _shape->m_extent) / 2 - linalg::abs(center_of_mass_distance);
+	float2 nor;
 
+	if (penetration_depth.x > penetration_depth.y) {
+		nor = linalg::normalize(float2(0.0, center_of_mass_distance.y));
+	}
+	else {
+		nor = linalg::normalize(float2(center_of_mass_distance.x, 0.0));
+	}
 
-	// This is a template return object, you should remove it and return your own Manifold
-    return Manifold(
-        m_body,
-        _shape->m_body,
-		float2(0.0f, 0.0f),
-        0.0f,
-        false
-    );
+	return Manifold(
+		m_body,
+		_shape->m_body,
+		nor,
+		(penetration_depth.x > penetration_depth.y) ? penetration_depth.y : penetration_depth.x,
+		penetration_depth.x > 0 && penetration_depth.y > 0
+	);
+
 }
 
 Manifold AABB::visitCircle(std::shared_ptr<const Circle> _shape) const

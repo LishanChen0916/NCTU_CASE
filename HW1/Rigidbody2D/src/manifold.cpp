@@ -14,14 +14,25 @@ Manifold::Manifold(
 
 void Manifold::Resolve() const
 {
+	if (!m_isHit) return;
+
     float e = std::min(m_body0->m_restitution, m_body1->m_restitution);
-	// TODO
+	float2 vr = m_body1->GetVelocity() - m_body0->GetVelocity();
+
+	// Solve the same direction of relative velocity and normal
+	if (linalg::dot(vr, m_normal) > 0) return;
+
+	float2 I = (1 + e) * m_normal * linalg::dot(vr, m_normal) / (m_body0->GetInvMass() + m_body1->GetInvMass());
+
+	m_body0->AddVelocity(I * m_body0->GetInvMass());
+	m_body1->AddVelocity(-I * m_body1->GetInvMass());
 }
 
 void Manifold::PositionalCorrection() const
 {
-    const float percent = 0.01f; // usually 20% to 80%, when fps is 1/60
-    const float slop = 0.01f; // usually 0.01 to 0.1
+	if (!m_isHit) return;
+    const float percent = 0.4f; // usually 20% to 80%, when fps is 1/60
+    const float slop = 0.01f;
 
 	const float inv_mass_a = m_body0->GetInvMass();
 	const float inv_mass_b = m_body1->GetInvMass();

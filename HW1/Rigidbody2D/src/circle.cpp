@@ -25,17 +25,16 @@ Manifold Circle::visitAABB(std::shared_ptr<const AABB> _shape) const
 
 Manifold Circle::visitCircle(std::shared_ptr<const Circle> _shape) const
 {
-    // TODO
+	float center_of_mass_distance = linalg::distance(_shape->m_body->GetPosition(), m_body->GetPosition());
+	float penertration_depth = m_radius + _shape->m_radius - center_of_mass_distance;
 
-
-	// This is a template return object, you should remove it and return your own Manifold
-    return Manifold(
-        m_body,
-        _shape->m_body,
-        float2(0.0f, 0.0f),
-        0.0f,
-        false
-    );
+	return Manifold(
+		m_body,
+		_shape->m_body,
+		linalg::normalize(_shape->m_body->GetPosition() - m_body->GetPosition()),
+		penertration_depth,
+		penertration_depth > 0
+	);
 }
 
 void Circle::Render() const
@@ -58,5 +57,4 @@ void Circle::Render() const
     }
     glEnd( );
     glPopMatrix();
-
 }
