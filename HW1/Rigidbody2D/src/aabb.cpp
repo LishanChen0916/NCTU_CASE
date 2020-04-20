@@ -13,15 +13,15 @@ Manifold AABB::accept(std::shared_ptr<const ShapeVisitor<Manifold>> visitor) con
 
 Manifold AABB::visitAABB(std::shared_ptr<const AABB> _shape) const
 {	
-	float2 center_of_mass_distance = _shape->m_body->GetPosition() - m_body->GetPosition();
-	float2 penetration_depth = (m_extent + _shape->m_extent) / 2 - linalg::abs(center_of_mass_distance);
+	float2 center_of_mass_vector = _shape->m_body->GetPosition() - m_body->GetPosition();
+	float2 penetration_depth = (m_extent + _shape->m_extent) / 2 - linalg::abs(center_of_mass_vector);
 	float2 nor;
 
 	if (penetration_depth.x > penetration_depth.y) {
-		nor = linalg::normalize(float2(0.0, center_of_mass_distance.y));
+		nor = linalg::normalize(float2(0.0, center_of_mass_vector.y));
 	}
 	else {
-		nor = linalg::normalize(float2(center_of_mass_distance.x, 0.0));
+		nor = linalg::normalize(float2(center_of_mass_vector.x, 0.0));
 	}
 
 	return Manifold(

@@ -59,7 +59,7 @@ void RungeKuttaFourthIntegrator::Integrate(const std::vector<BodyRef>& _bodies, 
 		deltaK3State[i].velocity = deltaK1State[i].velocity;
 
 		// Compute K4
-		deltaK4State[i].position = _bodies[i]->GetVelocity() + deltaK3State[i].velocity * deltaTime / 2;
+		deltaK4State[i].position = _bodies[i]->GetVelocity() + deltaK3State[i].velocity * deltaTime;
 		deltaK4State[i].velocity = deltaK1State[i].velocity;
 
 		_bodies[i]->AddPosition((deltaK1State[i].position / 6 + deltaK2State[i].position / 3 + 
