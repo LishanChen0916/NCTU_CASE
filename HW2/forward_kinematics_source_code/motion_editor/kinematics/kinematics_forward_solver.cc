@@ -107,6 +107,7 @@ PoseColl_t ForwardSolver::ComputeSkeletonPose(const math::Vector6dColl_t &joint_
     return pose_collection;
 }
 
+
 // protected func.
 
 // private func.
