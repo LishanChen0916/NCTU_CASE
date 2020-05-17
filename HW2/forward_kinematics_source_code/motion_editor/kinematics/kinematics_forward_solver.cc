@@ -87,7 +87,6 @@ PoseColl_t ForwardSolver::ComputeSkeletonPose(const math::Vector6dColl_t &joint_
 
             current_bone = *current_bone.parent;
         }
-
         R_i_0 = R_root * R_i_0;
 
         math::Vector3d_t V_i = skeleton()->bone_ptr(boneidx)->dir * skeleton()->bone_ptr(boneidx)->length;
