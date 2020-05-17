@@ -81,8 +81,7 @@ math::SpatialTemporalVector6d_t TimeWarper::ComputeWarpedMotion(
                     math::ToRadian(original_motion_sequence_->element(boneidx, next_frame_idx).angular_vector()).z()
                 );
 
-                math::Quaternion_t::RealScalar slerpRatio = slerp_frame_idx - prev_frame_idx;
-
+                double slerpRatio = slerp_frame_idx - prev_frame_idx;
                 math::Vector6d_t temp = original_motion_sequence_->element(boneidx, frameidx);
                 temp.set_angular_vector(math::ToDegree(
                     math::ComputeEulerAngleXyz(
@@ -112,8 +111,7 @@ math::SpatialTemporalVector6d_t TimeWarper::ComputeWarpedMotion(
                     math::ToRadian(original_motion_sequence_->element(boneidx, next_frame_idx).angular_vector()).z()
                 );
 
-                math::Quaternion_t::RealScalar slerpRatio = slerp_frame_idx - prev_frame_idx;
-
+                double slerpRatio = slerp_frame_idx - prev_frame_idx;
                 math::Vector6d_t temp = original_motion_sequence_->element(boneidx, frameidx);
                 temp.set_angular_vector(math::ToDegree(
                     math::ComputeEulerAngleXyz(
