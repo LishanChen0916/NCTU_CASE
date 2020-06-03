@@ -1,0 +1,167 @@
+﻿  acclaim_motion.cc
+  acclaim_skeleton.cc
+  posture.cc
+  console_color.cc
+  console_log.cc
+  geometry_arrow.cc
+  geometry_ellipsoid.cc
+  geometry_sphere.cc
+  gl_utils.cc
+  gui_camera.cc
+  gui_color.cc
+  gui_inverse_kinematics_display.cc
+  Unknown compiler version - please run the configure tests and report the results
+  Unknown compiler version - please run the configure tests and report the results
+  Unknown compiler version - please run the configure tests and report the results
+  Unknown compiler version - please run the configure tests and report the results
+  Unknown compiler version - please run the configure tests and report the results
+  Unknown compiler version - please run the configure tests and report the results
+  Unknown compiler version - please run the configure tests and report the results
+  Unknown compiler version - please run the configure tests and report the results
+  Unknown compiler version - please run the configure tests and report the results
+  gui_inverse_kinematics_gl_window.cc
+  gui_inverse_kinematics_main_window.cc
+  Unknown compiler version - please run the configure tests and report the results
+  Unknown compiler version - please run the configure tests and report the results
+  gui_marker.cc
+  Unknown compiler version - please run the configure tests and report the results
+  gui_mouse.cc
+  gui_polar_rotation.cc
+  gui_renderer.cc
+  gui_screenshot.cc
+  gui_signal.cc
+  gui_skeleton_color.cc
+  gui_utils.cc
+  kinematics_artic_idx.cc
+  kinematics_forward_solver.cc
+  kinematics_inverse_jacobian_ik_solver.cc
+  kinematics_pose.cc
+  Unknown compiler version - please run the configure tests and report the results
+  Unknown compiler version - please run the configure tests and report the results
+  Unknown compiler version - please run the configure tests and report the results
+  math_damped_least_squares_solver.cc
+  Unknown compiler version - please run the configure tests and report the results
+  Unknown compiler version - please run the configure tests and report the results
+  Unknown compiler version - please run the configure tests and report the results
+  Unknown compiler version - please run the configure tests and report the results
+  Unknown compiler version - please run the configure tests and report the results
+  Unknown compiler version - please run the configure tests and report the results
+  math_pseudoinverse_solver.cc
+  math_utils.cc
+  Unknown compiler version - please run the configure tests and report the results
+  Unknown compiler version - please run the configure tests and report the results
+  param_config.cc
+  param_xml_parser.cc
+  Unknown compiler version - please run the configure tests and report the results
+  Unknown compiler version - please run the configure tests and report the results
+  lodepng.cc
+  main.cc
+  Unknown compiler version - please run the configure tests and report the results
+  Unknown compiler version - please run the configure tests and report the results
+  Unknown compiler version - please run the configure tests and report the results
+  正在產生程式碼
+LINK : warning C4743: 'Eigen::PlainObjectBase<class Eigen::Matrix<double,3,1,0,3,1> >::`RTTI Base Class Array'' 在 'd:\ca_homework\hw2\ca_hw2_release\oppenheimhu-motion_editor-843960caf26a\helper\helper_forward_kinematics.cc' 和 'd:\nctu\case\hw3\inverse_kinematics_source_code\motion_editor\acclaim\acclaim_motion.cc' 中有不同的大小: 29 和 33 位元組
+LINK : warning C4743: 'math::ColVector3d<double>::`RTTI Base Class Array'' 在 'd:\ca_homework\hw2\ca_hw2_release\oppenheimhu-motion_editor-843960caf26a\helper\helper_forward_kinematics.cc' 和 'd:\nctu\case\hw3\inverse_kinematics_source_code\motion_editor\acclaim\acclaim_motion.cc' 中有不同的大小: 37 和 41 位元組
+LINK : warning C4743: 'Eigen::Matrix<double,3,1,0,3,1>::`RTTI Base Class Array'' 在 'd:\ca_homework\hw2\ca_hw2_release\oppenheimhu-motion_editor-843960caf26a\helper\helper_forward_kinematics.cc' 和 'd:\nctu\case\hw3\inverse_kinematics_source_code\motion_editor\acclaim\acclaim_motion.cc' 中有不同的大小: 33 和 37 位元組
+LINK : warning C4743: 'Eigen::DenseBase<class Eigen::Matrix<double,3,1,0,3,1> >::`RTTI Base Class Array'' 在 'd:\ca_homework\hw2\ca_hw2_release\oppenheimhu-motion_editor-843960caf26a\helper\helper_forward_kinematics.cc' 和 'd:\nctu\case\hw3\inverse_kinematics_source_code\motion_editor\acclaim\acclaim_motion.cc' 中有不同的大小: 21 和 25 位元組
+LINK : warning C4743: 'Eigen::MatrixBase<class Eigen::Matrix<double,3,1,0,3,1> >::`RTTI Base Class Array'' 在 'd:\ca_homework\hw2\ca_hw2_release\oppenheimhu-motion_editor-843960caf26a\helper\helper_forward_kinematics.cc' 和 'd:\nctu\case\hw3\inverse_kinematics_source_code\motion_editor\acclaim\acclaim_motion.cc' 中有不同的大小: 25 和 29 位元組
+  11019 of 11541 functions (95.5%) were compiled, the rest were copied from previous compilation.
+    140 functions were new in current compilation
+    50 functions had inline decision re-evaluated but remain unchanged
+  已完成程式碼產生
+helper.lib(helper_forward_kinematics.obj) : warning LNK4099: 找不到 PDB 'libhelper.pdb' (有 'helper.lib(helper_forward_kinematics.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\libhelper.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(case.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(case.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(filename_absolute.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(filename_absolute.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(filename_expand.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(filename_expand.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(filename_isdir.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(filename_isdir.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(filename_list.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(filename_list.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(filename_match.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(filename_match.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_abort.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_abort.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(fl_arc.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(fl_arc.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(fl_arci.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(fl_arci.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(fl_ask.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(fl_ask.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_Bitmap.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_Bitmap.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_Box.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_Box.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(fl_boxtype.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(fl_boxtype.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_Browser.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_Browser.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_Browser_.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_Browser_.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_Button.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_Button.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_Check_Button.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_Check_Button.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_Choice.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_Choice.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(fl_color.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(fl_color.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_compose.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_compose.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(fl_cursor.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(fl_cursor.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(fl_curve.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(fl_curve.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_Device.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_Device.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(fl_dnd.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(fl_dnd.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_Double_Window.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_Double_Window.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(fl_draw.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(fl_draw.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(fl_draw_image.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(fl_draw_image.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(fl_draw_pixmap.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(fl_draw_pixmap.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_File_Browser.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_File_Browser.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_File_Chooser.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_File_Chooser.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_File_Chooser2.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_File_Chooser2.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(fl_file_dir.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(fl_file_dir.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_File_Icon.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_File_Icon.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_File_Input.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_File_Input.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(fl_font.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(fl_font.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_get_system_colors.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_get_system_colors.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_grab.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_grab.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_Group.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_Group.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(fl_gtk.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(fl_gtk.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(fl_gleam.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(fl_gleam.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_Image.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_Image.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_Input.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_Input.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_Input_.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_Input_.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(fl_labeltype.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(fl_labeltype.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_Light_Button.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_Light_Button.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(fl_line_style.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(fl_line_style.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_lock.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_lock.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_Menu.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_Menu.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_Menu_.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_Menu_.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_Menu_add.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_Menu_add.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_Menu_Button.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_Menu_Button.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_Menu_Window.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_Menu_Window.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_Overlay_Window.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_Overlay_Window.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_Pixmap.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_Pixmap.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(fl_plastic.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(fl_plastic.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_Preferences.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_Preferences.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(fl_read_image.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(fl_read_image.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(fl_rect.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(fl_rect.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_Repeat_Button.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_Repeat_Button.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_Return_Button.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_Return_Button.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(fl_round_box.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(fl_round_box.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_Scrollbar.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_Scrollbar.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_Shared_Image.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_Shared_Image.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(fl_shortcut.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(fl_shortcut.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_Single_Window.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_Single_Window.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_Slider.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_Slider.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(fl_symbols.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(fl_symbols.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_Tile.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_Tile.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_Tiled_Image.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_Tiled_Image.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_Tooltip.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_Tooltip.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(fl_utf.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(fl_utf.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(fl_utf8.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(fl_utf8.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_Valuator.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_Valuator.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_Value_Input.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_Value_Input.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_Value_Slider.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_Value_Slider.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(fl_vertex.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(fl_vertex.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_Widget.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_Widget.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_Window.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_Window.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_Window_fullscreen.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_Window_fullscreen.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_Window_hotspot.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_Window_hotspot.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_Window_shape.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_Window_shape.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_XBM_Image.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_XBM_Image.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(Fl_XPM_Image.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(Fl_XPM_Image.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(flstring.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(flstring.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(is_spacing.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(is_spacing.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(numericsort.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(numericsort.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(scandir.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(scandir.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(screen_xywh.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(screen_xywh.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltk.lib(vsnprintf.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltk.lib(vsnprintf.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltkgl.lib(Fl_Gl_Choice.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltkgl.lib(Fl_Gl_Choice.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltkgl.lib(Fl_Gl_Device_Plugin.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltkgl.lib(Fl_Gl_Device_Plugin.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltkgl.lib(Fl_Gl_Window.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltkgl.lib(Fl_Gl_Window.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+fltkgl.lib(gl_draw.obj) : warning LNK4099: 找不到 PDB 'vc141.pdb' (有 'fltkgl.lib(gl_draw.obj)' 或位於 'D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\vc141.pdb')，當做沒有偵錯資訊，連結物件
+  inverse_kinematics.vcxproj -> D:\NCTU\CASE\HW3\inverse_kinematics_source_code\motion_editor\Release\inverse_kinematics.exe
