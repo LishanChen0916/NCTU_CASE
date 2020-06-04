@@ -28,8 +28,8 @@ math::VectorNd_t PseudoinverseSolver::Solve(
         const math::VectorNd_t &desired_vector
         ) const
 {
-    math:VectorNd_t angularVector(coef_mat.cols());
-    math:MatrixN_t JacobianInverse(coef_mat.cols(), coef_mat.rows());
+    math::VectorNd_t angularVector(coef_mat.cols());
+    math::MatrixN_t JacobianInverse(coef_mat.cols(), coef_mat.rows());
 
     Eigen::JacobiSVD<math::MatrixN_t> svd(coef_mat, Eigen::ComputeThinU | Eigen::ComputeThinV);
     Eigen::MatrixXd sigma(3, 3);
