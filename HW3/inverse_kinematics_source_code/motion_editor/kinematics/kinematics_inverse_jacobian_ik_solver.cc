@@ -75,18 +75,22 @@ math::Vector6dColl_t InverseJacobianIkSolver::Solve(
             while (tempBoneIdx != skeleton_->bone_ptr(start_bone_idx)->parent->idx) {
                 // (p - ri)
                 math::Vector3d_t r = temp[end_bone_idx].end_pos() - temp[tempBoneIdx].start_pos();
+                bool x = false, y = false, z = false;
                 for (int colIdx = 0; colIdx < skeleton_->bone_ptr(tempBoneIdx)->dof;) {
-                    if (skeleton_->bone_ptr(tempBoneIdx)->dofx) {
+                    if (skeleton_->bone_ptr(tempBoneIdx)->dofx && !x) {
                         Jacobian.col(colIdx + dofInc) = temp[tempBoneIdx].rotation().col(0).cross(r);
                         colIdx++;
+                        x = true;
                     }
-                    else if (skeleton_->bone_ptr(tempBoneIdx)->dofy) {
+                    else if (skeleton_->bone_ptr(tempBoneIdx)->dofy && y != true) {
                         Jacobian.col(colIdx + dofInc) = temp[tempBoneIdx].rotation().col(1).cross(r);
                         colIdx++;
+                        y = true;
                     }
-                    else if (skeleton_->bone_ptr(tempBoneIdx)->dofz) {
+                    else if (skeleton_->bone_ptr(tempBoneIdx)->dofz && z != true) {
                         Jacobian.col(colIdx + dofInc) = temp[tempBoneIdx].rotation().col(2).cross(r);
                         colIdx++;
+                        z = true;
                     }
                 }
                 dofInc += skeleton_->bone_ptr(tempBoneIdx)->dof;
@@ -98,20 +102,25 @@ math::Vector6dColl_t InverseJacobianIkSolver::Solve(
 
             math::VectorNd_t deltaSita(Jacobian.cols());
             deltaSita = linear_system_solver_->Solve(Jacobian, V);
+
             while (tempBoneIdx != skeleton_->bone_ptr(start_bone_idx)->parent->idx){
                 math::Vector3d_t angularVector = bodyPos6d[tempBoneIdx].angular_vector();
+                bool x = false, y = false, z = false;
                 for (int colIdx = 0; colIdx < skeleton_->bone_ptr(tempBoneIdx)->dof;) {
-                    if (skeleton_->bone_ptr(tempBoneIdx)->dofx) {
+                    if (skeleton_->bone_ptr(tempBoneIdx)->dofx && x != true) {
                         angularVector[0] += deltaSita[0 + dofInc] * step_;
                         colIdx++;
+                        x = true;
                     }
-                    else if (skeleton_->bone_ptr(tempBoneIdx)->dofy) {
+                    else if (skeleton_->bone_ptr(tempBoneIdx)->dofy && y != true) {
                         angularVector[1] += deltaSita[1 + dofInc] * step_;
                         colIdx++;
+                        y = true;
                     }
-                    else if (skeleton_->bone_ptr(tempBoneIdx)->dofz){
+                    else if (skeleton_->bone_ptr(tempBoneIdx)->dofz && z != true) {
                         angularVector[2] += deltaSita[2 + dofInc] * step_;
                         colIdx++;
+                        z = true;
                     }
                 }
                 bodyPos6d[tempBoneIdx].set_angular_vector(angularVector);
